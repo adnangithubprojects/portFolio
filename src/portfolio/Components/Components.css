@@ -1,0 +1,101 @@
+/*===================
+  ===Button Style===== 
+  ===================*/
+
+
+.btn{
+    transition: all .6s ease-in-out;
+}
+.btn_tag{
+    position: relative;
+    transition: all .5s ease;
+    @apply overflow-hidden border-[1px] hover:border-none  rounded  bg-zinc-800 hover:bg-none
+}
+.btn_tag:hover::before{
+    
+    content: "";
+    @apply h-[2px] w-full bg-gradient-to-r rounded-full from-pink-600 to-yellow-600 top-0 absolute right-0
+}
+.btn_tag:hover::after{
+    content: '';
+    @apply h-full w-[2px] bg-pink-600 left-0 bottom-0 absolute 
+}
+.btn_tag:hover .span1::after{
+  content: '';
+  @apply h-full w-[2px] bg-yellow-600 right-0 bottom-0 absolute 
+}
+
+.btn_tag:hover .span1::before{
+  content: '';
+  @apply h-[2px] w-full bg-gradient-to-r from-pink-600 to-yellow-600 right-0 bottom-0 absolute 
+}
+
+
+
+
+/*===================
+  ===NavBar Style==== 
+  ===================*/
+  .nav_tag{
+    @apply flex justify-between items-center text-white bg-[#272728] h-20 ;
+    }
+   
+    .ul_tag{
+     @apply   capitalize focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500;
+    }
+
+    .nav__icons{
+        @apply flex justify-between w-screen mx-10
+    }
+    .menu_icon{
+
+        @apply text-3xl   md:hidden lg:hidden xl:hidden 2xl:hidden;
+    }
+
+
+
+  .menu{
+    @apply flex w-[300px] justify-between capitalize
+}
+.menu_icon{
+    z-index: 999;
+    @apply absolute top-5 right-5
+}
+/* media========================================================= */
+@media(max-width:768px){
+    .btn_tag2{
+        display: none;
+    }
+.menu{
+    @apply flex flex-col justify-evenly items-center bg-[#272728] opacity-95 h-[500px] w-full absolute top-0 left-0
+}
+ .menu_icon{
+     display: flex
+ }
+ .menu.active{
+     left: -100%;
+     transition: .5s ease-in-out;
+ }
+  }
+
+
+
+  /*===================
+  ===Form Style==== 
+  ===================*/
+
+  .formInp:focus{
+    @apply bg-red-500 w-full h-full
+
+  }
+  .labelNum:focus{
+      color: red;
+    @apply bg-green-600 w-full h-full border-4 border-red-600 
+    }
+
+    .gotop{
+        @apply absolute top-1 left-3 font-bold text-cyan-500 rounded-full
+    }
+    .godown{
+        @apply absolute left-4 top-8 
+    }

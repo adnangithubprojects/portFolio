@@ -1,0 +1,49 @@
+/* ==============
+=======Info_Card========
+============ */
+
+
+
+
+.wrapper{
+    position: relative;
+    margin: 0 auto ;
+    width: 83%;
+
+}
+.wrapper img{
+    transition: all .5s ease;
+    display: block;
+
+    @apply opacity-100;
+}
+.wrapper:hover img{
+    @apply md:opacity-50 sm:opacity-100
+} 
+.overlay h1 p {
+
+    @apply  text-white text-4xl overflow-hidden;
+}
+.overlay{
+    @apply absolute bottom-8 left-8 opacity-0 ;
+}
+/* @media(max-width:640px){
+    .wrapper:hover img{
+        @apply opacity-100
+    } 
+    .overlay{
+        @apply hidden ;
+    }    
+} */
+.wrapper:hover .overlay{
+    @apply opacity-90 
+} 
+.Child{
+@apply opacity-100 
+}
+
+@media(max-width:640px){
+.head__img{
+    @apply hidden
+}
+}

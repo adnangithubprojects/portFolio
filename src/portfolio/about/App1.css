@@ -1,0 +1,271 @@
+
+
+
+
+
+
+
+
+
+
+
+/* extra small screen */
+        /* .nav_tag{
+        @apply flex justify-between items-center text-white bg-[#272728] h-20 ;
+        }
+       
+        .ul_tag{
+         @apply   capitalize focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500;
+        }
+        .btn_tag2{
+            display: none;
+        }
+        .nav__icons{
+            @apply flex justify-between w-screen mx-10
+        }
+        .menu_icon{
+
+            @apply text-3xl   md:hidden lg:hidden xl:hidden 2xl:hidden;
+        } */
+/* head section */
+        .head-sec{
+          @apply flex flex-col justify-center items-center mx-4 py-8 ;  
+        }
+        .img_tag{
+            @apply  mx-0  ;
+        }
+        
+        .right-col{
+            @apply  mx-1 flex flex-col;
+        }
+        .head_sec_heading{
+            @apply my-4 ;
+        }
+        .head_sec_para{
+            @apply  text-sm my-1;
+        }
+/*============= section=========== */
+    .card-sec-head{
+        @apply text-yellow-600 text-4xl py-12 ;
+    }
+    .card_body{
+        @apply flex justify-center flex-wrap m-10 ;
+    }
+    .card{
+        @apply  mb-4 w-[354px] h-[308px] rounded grid place-items-start  bg-[#1F1F21] text-white p-6;
+    }
+/* ===============Card Section1==================== */
+   .sec1_main{
+    @apply flex justify-center flex-wrap gap-4  m-10;
+   }
+    .Sec1_card{
+        @apply h-[363px] w-[354px] rounded-2xl grid justify-items-center  bg-[#1F1F21] text-white  py-20 px-6;
+    }
+
+
+
+
+
+
+/* small scren */
+@media(min-width:500px){
+
+           /* head section */
+.head-sec{
+    @apply flex-nowrap sm:items-center;  
+  }
+ }
+
+
+
+
+
+/* medium screen or tab */
+@media(min-width:700px){
+    .nav_tag{
+            /* @apply flex justify-around fixed; */
+        }
+        .nav__icons{
+            @apply w-0 mx-0
+        }
+        .ul_tag{
+        @apply  flex space-x-8 ;
+        }
+        .ul_tag li:focus{
+            @apply border-b-2 text-red-500 bg-red-500
+        }
+        .btn_tag{
+        @apply block;
+        }
+       
+          /*=============section=============  */
+        .card_body{
+            @apply  grid-cols-2 gap-7  my-10 mx-16  ;
+        }
+/* =======================section1 */
+        .sec1_main{
+            @apply flex-wrap;
+           }
+}
+
+/* large screen  */
+@media(min-width:1024px){  
+    .nav_tag{
+        @apply px-8 opacity-95 
+    }     
+      .head-sec{
+        @apply flex-row flex-wrap justify-center ;  
+      }
+      .img_tag{
+          @apply  mx-2  ;
+      }
+      
+      
+      
+      
+      .head_sec_para{
+          @apply  ml-0 text-xl my-2;
+      }
+      /* ===========Section============= */
+        .card-sec-head{        
+        @apply text-yellow-600 text-4xl ;
+        
+        }
+        .card_body{
+        @apply grid-cols-3 gap-7 ;
+        }
+     /* ===============section1============= */
+     .sec1_main{
+        @apply flex-wrap gap-x-7;
+       }
+}
+
+/* extra large screen  */
+@media(min-width:1280px){
+    .nav_tag{
+        /* @apply   justify-between ; */
+        }
+        /* ==============head========= */
+        .head-sec{
+            @apply flex-row flex-wrap justify-center ;  
+          }
+        .right_col{
+            @apply pl-2;
+        }
+/* ===============section=========== */
+    .card_body{
+        @apply grid grid-cols-3 gap-7 ;
+        }
+/*================section1=============  */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================================
+======================================================
+=================================================== */
+
+/* 
+
+
+.boody{
+    @apply flex justify-items-center items-center  m-0 p-0 h-[400px] bg-[#333];
+    }
+    .container{
+        @apply w-[1000px] relative flex justify-items-center;
+    }
+    
+    .container .card{
+        @apply relative cursor-pointer;
+
+    }
+    
+    .container .card .face{
+        @apply w-[300px] h-[200px] transition duration-500;
+
+    }
+    
+    .container .card .face.face1{
+        @apply relative bg-[#333] flex justify-items-center items-center  z-10  translate-y-[100px];
+        
+    }
+    
+    .container .card:hover .face.face1{
+        @apply bg-[#ff0057] translate-y-[0];
+    }
+    
+    .container .card .face.face1 .content{
+        opacity: 0.2;
+        transition: 0.5s;
+    }
+    
+    .container .card:hover .face.face1 .content{
+        opacity: 1;
+    }
+    
+    .container .card .face.face1 .content img{
+        max-width: 100px;
+    }
+    
+    .container .card .face.face1 .content h3{
+        margin: 10px 0 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    .container .card .face.face2{
+        position: relative;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+        transform: translateY(-100px);
+    }
+    
+    .container .card:hover .face.face2{
+        transform: translateY(0);
+    }
+    
+    .container .card .face.face2 .content p{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container .card .face.face2 .content a{
+        margin: 15px 0 0;
+        display:  inline-block;
+        text-decoration: none;
+        font-weight: 900;
+        color: #333;
+        padding: 5px;
+        border: 1px solid #333;
+    }
+    
+    .container .card .face.face2 .content a:hover{
+        background: #333;
+        color: #fff;
+    }
+
+
+
+ */
+
+/* ===========================================
+======================================================
+=================================================== */
